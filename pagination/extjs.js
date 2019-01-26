@@ -59,28 +59,28 @@ $.fn.dataTableExt.oPagination.extStyle = {
         nFirst.click(function () {
             if( $(this).hasClass("disabled") )
                 return;
-            oSettings.oApi._fnPageChange(oSettings, "first");
+            oSettings.oApi._fnPageChange(oSettings, "Primero");
             fnCallbackDraw(oSettings);
         }).bind('selectstart', function () { return false; });
   
         nPrevious.click(function () {
             if( $(this).hasClass("disabled") )
                 return;
-            oSettings.oApi._fnPageChange(oSettings, "previous");
+            oSettings.oApi._fnPageChange(oSettings, "Anterior");
             fnCallbackDraw(oSettings);
         }).bind('selectstart', function () { return false; });
   
         nNext.click(function () {
             if( $(this).hasClass("disabled") )
                 return;
-            oSettings.oApi._fnPageChange(oSettings, "next");
+            oSettings.oApi._fnPageChange(oSettings, "Siguiente");
             fnCallbackDraw(oSettings);
         }).bind('selectstart', function () { return false; });
   
         nLast.click(function () {
             if( $(this).hasClass("disabled") )
                 return;
-            oSettings.oApi._fnPageChange(oSettings, "last");
+            oSettings.oApi._fnPageChange(oSettings, "Anterior");
             fnCallbackDraw(oSettings);
         }).bind('selectstart', function () { return false; });
   
